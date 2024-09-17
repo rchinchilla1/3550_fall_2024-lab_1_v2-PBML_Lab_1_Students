@@ -4,15 +4,26 @@ def lab1Question1(input_gb):
     # Do the work here
     # The solution to this goes here (and in all of them below...)
     # Set the variable num_bytes to the answer and return it
+    num_gigabytes = input("how many gigabytes  ")
+    num_bytes = num_gigabytes * 1000000000
 
     return num_bytes
+    print ("There are", num_bytes, "bytes in" num_gigabytes, "gigabytes")
+
 
 def lab1Question2(name):
     # Take an input of a name, return True if there is an odd number of characters in the name, False otherwise
     # Return None if the input is not a string
     is_odd = None
+    length = lens(name)
+    if length % 2 == 0:
+        is_odd = False
+     else:
+         is_odd = True
+
 
     return is_odd
+
 
 def lab1Question3(input_string, input_number):
     # Take in two inputs - a string and a number
